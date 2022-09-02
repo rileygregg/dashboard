@@ -19,6 +19,20 @@ body {
 }
 
 /* Children of Main */
+.sidebar-container {
+    display: grid;
+    grid-template-rows: 50px 300px 150px;
+    grid-template-columns: 1fr;
+}
+
+.sidebar-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+}
+
 .header {
     background-color: lightgreen;
 }
+
+/* Buttons */

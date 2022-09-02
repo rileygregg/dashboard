@@ -1,0 +1,24 @@
+/* Main Parents */
+body {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;
+    margin: 0%;
+    height: 100vh;
+}
+
+.left-column {
+    background: lightblue;
+}
+
+.right-column {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr;
+    background: lightgrey;
+}
+
+/* Children of Main */
+.header {
+    background-color: lightgreen;
+}

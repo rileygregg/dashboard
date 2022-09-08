@@ -133,6 +133,7 @@ body {
     border-bottom: solid 1px #64748b;
 }
 
+/* Trending Section */
 .trending-title {
     grid-row-start: 3;
     grid-row-end: 4;

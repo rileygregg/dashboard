@@ -61,16 +61,18 @@ body {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: auto 1fr auto 1fr 50px;
-    column-gap: 15px;
+    column-gap: 25px;
     margin-left: 25px;
     margin-right: 25px;
+    margin-top: 25px;
 }
 
 .projects-title {
     /* border: solid 1px black; */
     grid-area: 1, 1, 2, 2;
     font-size: 20px;
-    letter-spacing: 1px;
+    letter-spacing: 1.1px;
+    margin-bottom: 10px;
 }
 
 .projects-container {
@@ -92,6 +94,7 @@ body {
     background-color: #f8fafc;
     border-radius: 10px;
     font-size: 16px;
+    box-shadow: 2px 2px 10px grey;
 }
 
 /* Announcement side */
@@ -99,7 +102,7 @@ body {
     grid-area: 1, 2, 2, 3;
     font-size: 20px;
     font-weight: bold;
-    letter-spacing: 1.2px;
+    letter-spacing: 1.1px;
 }
 
 .announcement-container {
@@ -109,10 +112,25 @@ body {
     grid-column-end: 3;
     background-color: #f8fafc;
     border-radius: 10px;
+    box-shadow: 2px 2px 10px grey;
+    padding: 0px 15px 0px 15px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
 .announcement {
     padding: 20px, 0px, 20px, 0px;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#announcement2 {
+    border-top: solid 1px #64748b;
+    border-bottom: solid 1px #64748b;
 }
 
 .trending-title {
@@ -122,6 +140,9 @@ body {
     grid-column-end: 3;
     font-size: 20px;
     font-weight: bold;
+    letter-spacing: 1.1px;
+    margin-top: 25px;
+    margin-bottom: 10px;
 }
 
 .trending-container {
@@ -131,8 +152,24 @@ body {
     grid-column-end: 3;
     background-color: #f8fafc;
     border-radius: 10px;
+    box-shadow: 2px 2px 10px grey;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
 }
 
+.trending {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 15px;
+    gap: 10px;
+}
+
+.shout-out {
+    font-size: 10px;
+}
 /* Buttons */
 .sidebar-main-button,
 .sidebar-settings-button {
@@ -148,4 +185,8 @@ body {
 /* Icons */
 .dash-icon {
     width: 30px;
+}
+
+.user-logo {
+    width: 40px;
 }

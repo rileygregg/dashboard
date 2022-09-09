@@ -53,23 +53,63 @@
             </div>
         </nav>
 
-        <!-- Everything outside of sidebar -->
+        <!-- Everything right of sidebar -->
         <div class="right-column">
             <!-- Header area -->
             <header class="header">
+                <!-- Top of Header -->
                 <div class="header-top">
-                    <div class="search-bar"></div>
-                    <div class="profile"></div>
+                    <button class="btn-1">
+                        <img
+                            src="icons/search.png"
+                            alt="search-button"
+                            class="search-button"
+                        />
+                    </button>
+
+                    <input type="text" class="search" />
+
+                    <button class="btn-2">
+                        <img
+                            src="icons/bell.png"
+                            alt="notify"
+                            class="notify-bell"
+                        />
+                    </button>
+
+                    <button class="btn-3">
+                        <img
+                            src="icons/crow.png"
+                            alt="crow-pic"
+                            class="profile-pic"
+                        />
+                    </button>
+
+                    <div class="profile-name"><strong>Riley Gregg</strong></div>
                 </div>
 
+                <!-- Bottom of Header -->
                 <div class="header-bottom">
-                    <div class="large-profile-pic"></div>
-                    <div class="greeting"></div>
-                    <div class="upload-controls"></div>
+                    <div class="profile-pic">
+                        <img
+                            src="icons/crow.png"
+                            alt="crow-pic"
+                            class="profile-pic-2"
+                        />
+                    </div>
+
+                    <div class="greeting">
+                        Hi There,<br />
+                        <strong>Riley Gregg</strong>(@RileyG93)
+                    </div>
+
+                    <button class="hd-btn">New</button>
+                    <button class="hd-btn">Upload</button>
+                    <button class="hd-btn" id="share">Share</button>
                 </div>
             </header>
 
-            <!-- Main area below header -->
+            <!-- Main Project Area -->
             <main class="main-container">
                 <div class="projects-title">
                     <b>Your Projects</b>
@@ -114,7 +154,7 @@
                     </div>
                 </div>
 
-                <!-- Beside projects area -->
+                <!-- Announcement/Trending -->
 
                 <div class="announcement-title">Announcements</div>
 
